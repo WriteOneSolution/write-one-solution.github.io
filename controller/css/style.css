@@ -8,7 +8,7 @@ body,html{
     height: 100%;
 }
 .imagen-parallax{
-    background-image: url(../../model/img/her.jpg);
+    background-image: url(../../img/her.jpg);
     min-height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -50,6 +50,10 @@ body,html{
     color: #EEEEEE;
     font-family: 'Indie Flower', cursive;
     margin: 0;
+}
+.texto-imagen-parallax h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
 }
 .texto-parallax{
     background-color: red;
