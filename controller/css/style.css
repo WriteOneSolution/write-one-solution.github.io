@@ -7,6 +7,57 @@ body,html{
     box-sizing: border-box;
     height: 100%;
 }
+/*Idioma*/
+.contenedor-idioma .container{
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 5%;
+    margin-left: 25%;
+    background-color: #EEEEEE;
+    border: 2px solid #222831;
+    border-radius: 5px;
+    width: 600px;
+    max-width: 600px;
+    overflow: visible;
+}
+.contenedor-idioma .container>p{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #222831;
+    font-size: 1.5em;
+    display: block;
+    margin-bottom: 20px;
+}
+.contenedor-botones{
+    margin-bottom: 20px;
+}
+.contenedor-botones>a{
+    margin-right: 80px;
+    margin-left: 70px;
+}
+.contenedor-botones a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #393E46;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 2em;
+    color: #EEEEEE;
+    font-family: 'Indie Flower', cursive;
+}
+.contenedor-botones a:hover{
+    background-color: #00ADB5;
+}
+/*Responsive*/
+@media only screen and (max-width: 750){
+    .contenedor-idioma .container{
+        margin-left: 5%;
+        width: 100px;
+        max-width: 100px;
+    }
+}
+/*Home Page*/
 .imagen-parallax{
     background-image: url(../../img/her.jpg);
     min-height: 100%;
