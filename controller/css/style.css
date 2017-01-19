@@ -12,12 +12,14 @@ body,html{
     box-sizing: border-box;
     margin: auto;
     margin-top: 5%;
-    margin-left: 25%;
+    margin-left: 35%;
     background-color: #EEEEEE;
     border: 2px solid #222831;
-    border-radius: 5px;
-    width: 600px;
-    max-width: 600px;
+    width: 400px;
+    max-width: 400px;
+    height: 400px;
+    max-height: 400px;
+    box-shadow: 10px 5px #393E46;
     overflow: visible;
 }
 .contenedor-idioma .container>p{
@@ -31,9 +33,11 @@ body,html{
 .contenedor-botones{
     margin-bottom: 20px;
 }
+.contenedor-botones a{
+    margin: 10px 0 40px 120px;
+}
 .contenedor-botones>a{
-    margin-right: 80px;
-    margin-left: 70px;
+    margin-left: 120px;
 }
 .contenedor-botones a{
     text-decoration: none;
@@ -66,7 +70,7 @@ body,html{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    opacity: 0.8;
+    opacity: 1.5;
     box-sizing: border-box;
 }
 .icono-menu{
@@ -84,6 +88,10 @@ body,html{
     font-size: 1.7em;
     top: 5%;
     left: 5%;
+}
+.icono-app h3{
+    font-size: .5em;
+    margin-top: 0;
 }
 .texto-imagen-parallax{
     display: inline-block;
@@ -106,18 +114,21 @@ body,html{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
-.texto-parallax{
-    background-color: red;
-    min-height: 100%;
-    height: 100%;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.texto-parallax>.container{
-    background-color: blue;
-}
-.texto-parallax .container>p{
+.cuerpo-texto>h1{
     text-align: center;
+    color: #00ADB5;
+}
+.cuerpo-texto p{
+    text-align: justify;
+    margin-left: 10px;
+}
+.content-bar{
+    margin-top: 50px;
+    display: block;
+    border: 1px solid #00ADB5;
+}
+.content-bar li{
+    margin-bottom: 15px;
 }
 /*Responsive*/
 @media only screen and (max-device-width:1024px){
