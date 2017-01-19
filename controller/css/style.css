@@ -6,6 +6,7 @@ body,html{
     background-color: #EEEEEE;
     box-sizing: border-box;
     height: 100%;
+    position: relative;
 }
 /*Idioma*/
 .contenedor-idioma .container{
@@ -56,9 +57,18 @@ body,html{
 /*Responsive*/
 @media only screen and (max-width: 750){
     .contenedor-idioma .container{
-        margin-left: 5%;
-        width: 100px;
-        max-width: 100px;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 5%;
+        margin-left: 15%;
+        background-color: #EEEEEE;
+        border: 2px solid #222831;
+        width: 400px;
+        max-width: 400px;
+        height: 400px;
+        max-height: 400px;
+        box-shadow: 10px 5px #393E46;
+        overflow: visible;
     }
 }
 /*Home Page*/
@@ -114,21 +124,36 @@ body,html{
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
 }
+/*Contenido*/
+.cuerpo-texto, .content-bar{
+    box-sizing: border-box;
+}
 .cuerpo-texto>h1{
     text-align: center;
     color: #00ADB5;
 }
 .cuerpo-texto p{
+    font-size: 1.5em;
     text-align: justify;
-    margin-left: 10px;
+    margin: 30px 0 140px 20px;
+    display: block;
+    padding: 40px;
+    border-bottom: solid 1px #00ADB5;
 }
 .content-bar{
-    margin-top: 50px;
     display: block;
-    border: 1px solid #00ADB5;
+    background-color: blue;
+    position: fixed;
+    top: 100px;
+    right: 5%;
 }
-.content-bar li{
+.content-bar>ul{
+    width: 200px;
+}
+.content-bar ul li{
     margin-bottom: 15px;
+    display: block;
+    margin-left: 10px;
 }
 /*Responsive*/
 @media only screen and (max-device-width:1024px){

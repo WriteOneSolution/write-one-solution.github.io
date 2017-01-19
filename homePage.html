@@ -11,9 +11,10 @@
          <!--Hojas de Estilo-->
         <link rel="stylesheet" href="controller/css/bootstrap.min.css">
         <link rel="stylesheet" href="controller/css/style.css">
+        <link rel="shortcut icon" href="img/logo.ico">
         <title>WOS</title>
     </head>
-    <body>
+    <body data-spy="scroll" data-target="navbar-contenido">
         <!--Imagen parallax-->
         <div class="imagen-parallax">
             <div class="icono-app">
@@ -29,31 +30,39 @@
         </div>
 
         <!--Contenido-->
-        <div class="row">
+        <div class="row  cuerpo-contenido">
             <div class="col-md-9">
                 <section class="cuerpo-texto">
-                    <h1>¿Quienes somos?</h1>
+                    <h1 id="quien">¿Quienes somos?</h1>
                         <p>
                         WOS inc. proporciona un producto inovador y de gran calidad como un grupo que solo quiere ayudarte a ti para sobresalir en esas materias dificiles o para orientarte a que sigas dando lo mejor de ti mismo. Nosotros somos un grupo de alumnos que ayudan a la comunidad a ser mejores, pues nostros tambien hemos pasado por lo mismo, somos personas con el mismo proposito en la vida, sobresalir y ser mejores cada día, nosotros trabajamos siempre con empeño para entregarte la calidad necesaria y satisfacer sus necesidades especificas.
                         Simplemente nos gusta ayudar a las personas.
                         </p>
+                        <h1 id="paquetes">Paquetes</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h1 id="presentacion">Presentación</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h1 id="demo">Demo</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h1 id="contacto">Contacto</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </section>
             </div>
                 <div class="col-md-3">
-                    <section class="content-bar">
-                        <ul>
-                            <li>¿Quiénes somos?</li>
-                            <li>Presentación</li>
-                            <li>Paquetes</li>
-                            <li>Demo</li>
-                            <li>Contacto</li>
+                    <section class="content-bar" id="nabvar-contenido">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li><a href="#quien">¿Quiénes somos?</a></li>
+                            <li><a href="#presentacion">Presentación</a></li>
+                            <li><a href="#paquetes">Paquetes</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
                         </ul>
                     </section>
                  </div>
             </div>
 
-<script src="controller/js/jquery1.4.1.min.js"></script>
-<script src="controller/js/bootstrap.min.js"></script>
-<script src="controller/js/actions.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="controller/js/bootstrap.min.js"></script>
+        <script type="controller/js/listener.js"></script>
     </body>
 </html>
