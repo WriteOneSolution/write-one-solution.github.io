@@ -1,9 +1,9 @@
 /*
-font-family: 'Indie Flower', cursive; =>Titulos
-font-family: 'Roboto', sans-serif; =>Texto
+font-family: 'Nunito', sans-serif; Texto
+font-family: 'Rokkitt', serif; Titulos
 */
 body,html{
-    background-color: #EEEEEE;
+    background-color: #F0FFF3;
     box-sizing: border-box;
     height: 100%;
     position: relative;
@@ -14,19 +14,19 @@ body,html{
     margin: auto;
     margin-top: 5%;
     margin-left: 35%;
-    background-color: #EEEEEE;
-    border: 2px solid #222831;
+    background-color: #F0FFF3;
+    border: 2px solid #70ACB1;
     width: 400px;
     max-width: 400px;
     height: 400px;
     max-height: 400px;
-    box-shadow: 10px 5px #393E46;
+    box-shadow: 10px 5px #70ACB1;
     overflow: visible;
 }
 .contenedor-idioma .container>p{
     text-align: center;
-    font-family: 'Roboto', sans-serif;
-    color: #222831;
+    font-family: 'Nunito', sans-serif;
+    color: #70ACB1;
     font-size: 1.5em;
     display: block;
     margin-bottom: 20px;
@@ -34,42 +34,28 @@ body,html{
 .contenedor-botones{
     margin-bottom: 20px;
 }
-.contenedor-botones a{
-    margin: 10px 0 40px 120px;
-}
 .contenedor-botones>a{
     margin-left: 120px;
 }
 .contenedor-botones a{
+    margin: 10px 0 40px 120px;
     text-decoration: none;
     display: inline-block;
-    background-color: #393E46;
-    border: none;
-    border-radius: 5px;
+    background-color: #70ACB1;
+    border: 1px solid #70ACB1;
+    border-radius: 20px #70ACB1;
     padding: 10px;
     font-size: 2em;
-    color: #EEEEEE;
-    font-family: 'Indie Flower', cursive;
+    color: #59606D;
+    font-family: 'Rokkitt', serif;
 }
 .contenedor-botones a:hover{
-    background-color: #00ADB5;
+    background-color: #F0FFF3;
+    border: 2px solid #70ACB1;
 }
 /*Responsive*/
 @media only screen and (max-width: 750){
-    .contenedor-idioma .container{
-        box-sizing: border-box;
-        margin: auto;
-        margin-top: 5%;
-        margin-left: 15%;
-        background-color: #EEEEEE;
-        border: 2px solid #222831;
-        width: 400px;
-        max-width: 400px;
-        height: 400px;
-        max-height: 400px;
-        box-shadow: 10px 5px #393E46;
-        overflow: visible;
-    }
+
 }
 /*Home Page*/
 .imagen-parallax{
@@ -86,7 +72,7 @@ body,html{
 .icono-menu{
     display: block;
     position: fixed;
-    color: #00ADB5;
+    color: #C6F1E7;
     font-size: 1.5em;
     top: 5%;
     left: 90%;
@@ -94,35 +80,34 @@ body,html{
 .icono-app{
     display: block;
     position: absolute;
-    color: #00ADB5;
+    color: #C6F1E7;
     font-size: 1.7em;
     top: 5%;
     left: 5%;
+    font-family: 'Rokkitt', serif;
 }
 .icono-app h3{
     font-size: .5em;
     margin-top: 0;
+    font-family: 'Rokkitt', serif;
 }
 .texto-imagen-parallax{
     display: inline-block;
     position: absolute;
-    background-color: #222831;
+    background-color: #59606D;
     min-width: 32%;
     top: 80%;
     left: 35%;
     box-sizing: border-box;
     text-align: center;
     align-items: center;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 .texto-imagen-parallax>h1{
-    color: #EEEEEE;
-    font-family: 'Indie Flower', cursive;
+    opacity: 1;
+    color: #70ACB1;
+    font-family: 'Rokkitt', serif;
     margin: 0;
-}
-.texto-imagen-parallax h2{
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
 }
 /*Contenido*/
 .cuerpo-texto, .content-bar{
@@ -130,30 +115,40 @@ body,html{
 }
 .cuerpo-texto>h1{
     text-align: center;
-    color: #00ADB5;
+    color: #70ACB1;
+    font-family: 'Rokkitt', serif;
 }
 .cuerpo-texto p{
     font-size: 1.5em;
     text-align: justify;
-    margin: 30px 0 140px 20px;
+    margin: 30px 0 160px 40px;
     display: block;
     padding: 40px;
-    border-bottom: solid 1px #00ADB5;
+    border-bottom: solid 1px #59606D;
+}
+.texto-cursiva{
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 1em;
+    text-align: justify;
+    color: #70ACB1;
 }
 .content-bar{
     display: block;
-    background-color: blue;
-    position: fixed;
-    top: 100px;
-    right: 5%;
-}
-.content-bar>ul{
-    width: 200px;
+    margin: 60px 50px 0 10px;
 }
 .content-bar ul li{
     margin-bottom: 15px;
     display: block;
-    margin-left: 10px;
+    margin-left: 50px;
+    font-size: 1.2em;
+    text-align: center;
+    color: #222831;
+}
+.content-bar ul li:hover{
+    text-decoration: none;
+    border: none;
+    border-radius: none;
 }
 /*Responsive*/
 @media only screen and (max-device-width:1024px){
